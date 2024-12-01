@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Student Registration Form</title>
+    <link rel="stylesheet" href="./RegistrationForm.css">
+    <link rel="stylesheet" href="./RegistrationForm.js">
+</head>
+<body>  
+    <form style="border: 1px solid rgb(61, 61, 230);">
+        <div class="container">
+           <img src="./logo/logo-synergy.png" alt="Synergy's Logo"/>
+            <h1>Synergy Institute Of Technology, BBSR Odisha</h1>
+            <h2>Student Registration From</h2>
+        </div>
+        <input type="file" name="studentimage" id="studentimage" required>(Less than 50 Mb)
+        <br/>
+        <label for="studentname">Student's Name:</label>
+        <input type="text" placeholder="First Name" name="studentname" id="studentname"/>
+        <input type="text" placeholder="Middle Name" name="studentname" id="studentname"/>
+        <input type="text" placeholder="Last Name" name="studentname" id="studentname"/>
+
+        <br/>
+        <label for="fathername">Father's Name:</label>
+        <input type="text" placeholder="Father's Full Name" name="fathername" id="fathername">
+
+        <br/>
+        <label for="mothername">Mother's Name:</label>
+        <input type="text" placeholder="Mother's Full Name" name="mothername" id="mothername">
+
+        <br/>
+        <label for="studentemail">Enter Your Email</label>
+        <input type="text" placeholder="email@xyz.com" name="studentemail" id="studentemail" />
+
+
+        <br/>
+        <label for="dob">Date Of Birth</label>
+        <input type="date" placeholder="Select Your DOB" name="dob" id="dob">
+        <br/>
+        Gender
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Others
+        <br/>
+        
+        <br/>
+        <div class="form-item">
+            <label for="lastQualification">Qualification</label>
+            <select name="qualification" id="lastQualification" class="lastQualification">
+                <option value="matriculation">Matriculation</option>
+                <option value="diploma">Diploma</option>
+                <option value="bachelors">Bachelors</option>
+                <option value="maters">Masters</option>
+            </select>
+         
+        <div class="form-item">  
+            <label for="Department">Department</label>
+            <select name="Department" id="Department" class="Department">
+                <option value="ElectricalEngg">Electrical Engineering</option>
+                <option value="ComputerEngg">Computer Engineering</option>
+                <option value="CivilEngg">Civil Engineering</option>
+                <option value="MechanicalEngg">Mechanical Engineering</option>
+                <option value="none">None</option>
+            </select>
+        </div> 
+
+        <br/>
+
+        <h3>Permanent Address</h3>
+         <div class="form-item">
+            <label for="state">State:</label>
+            <input type="text" name="state" id="state" class="state" placeholder="State">
+         </div>
+
+         <div class="form-item">
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" class="city" placeholder="City">
+         </div>
+
+         <div class="form-item">
+            <label for="zipcode">Zip Code:</label>
+            <input type="text" name="zipcode" id="zipcode" class="zipcode" placeholder="Zip Code">
+         </div>
+
+         <div class="form-item">
+            <label for="telephone">Telephone/Mobile:</label>
+            <input type="tel" name="telephone" id="telephone" class="telephone" placeholder="Telephone" required>
+         </div>
+
+         <h3>Temporary Address</h3>
+         <div class="form-item">
+            <input type="checkbox" name="sameas" id="sameas" class="sameas">Same as Permanent Address
+         </div>
+
+         <div class="form-item">
+            <label for="Tstate">State:</label>
+            <input type="text" name="Tstate" id="Tstate" class="Tstate" placeholder="State">
+         </div>
+
+         <div class="form-item">
+            <label for="Tcity">City:</label>
+            <input type="text" name="Tcity" id="Tcity" class="Tcity" placeholder="City">
+         </div>
+
+         <div class="form-item">
+            <label for="Tzipcode">Zip Code:</label>
+            <input type="text" name="Tzipcode" id="Tzipcode" class="zipcode" placeholder="Zip Code">
+         </div>
+
+         <div class="form-item">
+            <label for="TEMtelephone">Telephone/Mobile:</label>
+            <input type="tel" name="TEMtelephone" id="TEMtelephone" class="TEMtelephone" placeholder="Telephone" required>
+         </div>
+         
+         
+        <br/>
+        <input type="checkbox"/>Accept terms and conditions
+        <br/>
+       <button class="register" type="submit">Register</button>
+       <button class="reset" type="reset">Reset</button>
+
+    </form>
+</body>
+</html>
